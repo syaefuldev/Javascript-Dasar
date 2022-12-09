@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //We call this an else if a statement.This statement runs its code block if the condition before it is false
+        // and hour <17 is true
+        let hour = 14 ;
+        if (hour < 12) {
+            console.log("Good Morning");
+        }
+        else if (hour < 17) {
+            console.log("Good Afternoon");
+        }
+        // We can code an else statement to run its code block when the if and else if conditions are false
+        let hour1 = 18;
+        if (hour1 < 12) {
+            console.log("Good Morning");
+        }
+        else if (hour1 < 17) {
+            console.log('Good Afternoon');
+        }
+        else  {
+            console.log('Good Night');
+        }
+        //As long as they go before the else statement
+        //We can add as many else if statements as we'd like
+        let hour2 = 20;
+        if (hour2 < 12) {
+            console.log('Good Morning');
+        }
+        else if (hour2 < 15) {
+            console.log('Good Afternoon');
+        }
+        else if (hour2 < 21) {
+            console.log('Good Evening');
+        }
+        else {
+            console.log('Good Night');
+        }
+        //Display a message in the console when age is greater than 12 and less than 17 by coding an else if statement
+        let age = 16 ; 
+        if (age <= 12){
+            console.log('Where are you parents?');
+        }
+        else if (age <= 18) {
+            console.log('Your are too young to ride this ride');
+        }
+        else if (age >= 17) {
+            console.log('Welcome!');
+        }
+        //Code the keywords for an else if statement
+        let fruits = "orange";
+        if (fruits === "banana") {
+            console.log(false);
+        }
+        else if (fruits === "orange") {
+            console.log(true);
+        }
+
+        //Display a message in the console when topping
+        //isnt equal to  "pineapple" or "pepperoni"
+        let topping = "mushrooms";
+        if (topping === "pineapple") {
+            console.log('Request Denied');
+        }
+        else if (topping === 'pepperoni') {
+            console.log('Request Accepted');
+        }
+        else {
+            console.log('Could no process request')
+        }
+        
+        //Display Welcome! in the console when age is greater than 15 and less than 140
+        //by coding a second else if statement
+        let age1 = 130
+        if (age1 < 12) {
+            console.log(false)
+        }
+        else if (age1 <= 15) {
+            console.log(false)
+        }
+        else if (age1 < 200) {
+            console.log(true)
+        }
+    </script>
+</body>
+</html>

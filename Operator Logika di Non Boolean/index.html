@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* 
+        OPERATOR LOGIKA DI NON BOOLEAN
+        -Sebelumnya kita sudah tahu bahwa operator logika AND(&&) dan OR (||) digunakan
+        untuk dua data boolean
+        -Namun berbeda dijavascript, kita bisa menggunakan operator logika
+        AND dan OR untuk tipe data non boolean
+        */
+      /* 
+       OPERATOR OR (||) DI NON BOOLEAN
+       -Operator logika OR (||) membaca dari kiri ke kanan
+       -Operator ini akan mengambil nilai pertama yang truthy
+       -Jika tidak ada satupun yang bernilai truthy, maka yang terakhir yang akan diambil
+       */
+      //Kode Operator OR(||)
+      console.info("hello" || ""); //hello
+      console.info("" || []); //[]
+      console.info("0" || "NOL"); //"0"
+      console.info(0 || "NOL"); // NOL
+      console.info(null || "NULL"); // NULL
+      console.info(undefined || "UNDEFINED"); //NULL
+      console.info(0 || false); //false
+      //Contoh Kode
+      const person = {
+        firstName: "Syaeful",
+        LastName: "Annas",
+      };
+      const name = person.firstName || person.LastName;
+      console.info(name);
+      /* 
+      OPERATOR AND (&&) DI NON BOOLEAN
+      -Operator logika AND(&&), Membaca dari kiri ke kanan
+      -Operator ini akan mengambil nilai pertama yang falsy
+      -Jika tidak ada satupun yang bernilai falsy, maka yang
+      terakhir yang akan diambil
+      */
+      //Kode Operator AND (&&)
+      console.info("hello" && ""); //""
+      console.info("" && []); //""
+      console.info("0" && "NOL"); //NOL
+      console.info(0 && "NOL"); // 0
+      console.info(null && "NULL"); // null
+      console.info(undefined && "UNDEFINED"); //undefined
+      console.info("undefined" && "null"); //null
+    </script>
+  </body>
+</html>

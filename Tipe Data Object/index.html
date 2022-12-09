@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        Associate Array
+        Di bahasa pemrograman lain seperti PHP, kita bisa menggunakan
+        index berupa tipe data lain selain number, misal string.
+        Fitur ini biasanya disebut associative array atau hash
+        di Javascript associative array tidak didukung.
+        Jika kita memaksa memasukkan data bukan number di index array, maka
+        javascript akan merubah tipe data array tersebut menjadi object, dan
+        ini bisa berbahaya, karena beberapa operasi di array mungkin bisa merubah hasilnya.
+        */
+       /* 
+       Tipe Data Object
+       Tipe data object adalah tipe data yang mirip tipe data array.
+       yang membedakan adalah index pada tipe data object bisa menggunakan string.
+       index di object biasanya disebut attributes atau properties,bukan index
+
+       */
+      //Kode Membuat Object Kosong
+      const orang = {}
+      //Menambah atau Mengubah
+      orang["nama"] = "Syaeful"
+      orang["alamat"] = "Cirebon"
+      orang["umur"]  = 19
+      console.table(orang)
+      //Menghapus
+      delete orang ["umur"]
+      console.table(orang)
+      //Kode Membuat Object Dengan Properties
+      const person = {
+          name : "Syaeful Annas",
+          adress: "Cirebon",
+          yearsold : 19
+
+      }
+      console.table(person)
+      //Kode Mengakses Property Object
+      const contoh = {
+          "naama panjang": "Syfl Anas",
+          alamaat: "Cireebon",
+          umur: 19
+      }
+      console.info(`Nama : ${contoh["naama panjang"]}`)
+      console.info(`Alamat : ${contoh.alamaat}`)
+      console.info(`Umur: ${contoh.umur}`)
+    </script>
+</body>
+</html>

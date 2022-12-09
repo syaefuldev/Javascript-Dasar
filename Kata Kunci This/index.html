@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* 
+        Kata kunci adalah referensi ke object milik siapa
+        Tiap lokasi kata kunci this, bisa berbeda-beda
+        referensi pemiliknya
+        dalam object method, this merupakan referensi
+        ke global object.Dalam function, this merupakan
+        referensi ke global object
+        di function dengan strict mode.
+        dalam event,this merupakan refrensi ke element
+        yang menerima event
+        */
+      //Kode this global
+      console.info(this);
+      //Kode this di Object Method
+      const person = {
+        name: "Syaeful",
+        sayHello: function (name) {
+          console.info(`Hi ${name},My name is ${this.name}`);
+        },
+      };
+    </script>
+  </body>
+</html>

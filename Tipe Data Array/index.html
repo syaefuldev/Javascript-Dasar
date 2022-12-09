@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        TIPE DATA ARRAY
+        Array adalah tipe data yang berisikan kumpulan data.
+        Array di Javascript memiliki sifat dinamis, artinya datanya bisa
+        bertambah dengan sendirinya saat kita memasukan data kedlam array
+        */
+
+        //Kode Membuat Array
+        let arrayKosong = []
+        let ArrayNama = ["Sheyana", "Bagoes", "Sabila"]
+        /* 
+        CARA KERJA ARRAY
+        Setiap data di array akan disimpan dalam posisi berurutan, dimana
+        urutan pertama dimulai dari 0.
+        Setiap kita menambah data ke Array, otomatis data akan disimpan
+        diurutan terakhir.
+        Urutan di Array, kita sebut dengan index
+        */
+       //Kode Menambah Array
+       const names = []
+       names.push ("Sheyana")
+       names.push ("Bagoes", "Sabila")
+
+       console.table(names)
+       /*
+       OPERASI DI ARRAY
+       array.push(value) = Menambah data ke Array
+       array.lenght      = Untuk mendapatkan panjang array
+       array[index]      = Mengubah data diposisi index
+       array[index]=value   = Mengubah data diposisi index
+       delete array[index]  = Menghapus data di posisi index, Namun index tidak bergeser
+       */
+      //Kode Operasi di Array
+
+      names [0] = "Syaeful"
+      names [1] = "Annas"
+      console.table(names)
+      delete names[2]
+      console.table(names)
+      names.push ("Syaeful lagi")
+      console.table(names)
+      names [2] = "Ada lagi"
+      console.table(names)
+      names.push (1,2,3,4,5)
+      names.push (["Syaefull", "Annass"])
+      console.table(names)
+
+    /* 
+    PERLU DI INGAT
+    Data di dalam array tidak ada batasannya harus data apa.
+    Jadi kita bisa menggunakan data apapun ke dalam Array
+    Bahkan kita juga bisa memasukkan Array ke dalam Array jika kita mau
+
+    */
+    </script>
+</body>
+</html>

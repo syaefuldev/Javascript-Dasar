@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Switch Botton</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      body {
+        margin-top: 300px;
+        margin-left: 300px;
+      }
+      .toggle {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 98px;
+        height: 30px;
+        position: relative;
+        border-radius: 20px;
+        display: inline-block;
+        align-items: center;
+        overflow: hidden;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        background-color: #707070;
+        transition: background-color ease 0.3s;
+      }
+      .toggle:before {
+        content: "On";
+        display: block;
+        position: absolute;
+        z-index: 2;
+        width: 25px;
+        height: 25px;
+        background: greenyellow;
+        left: 2px;
+        top: 2px;
+        border-radius: 50%;
+        font: bold 12px/28px Helvetica;
+        text-indent: -40px;
+        word-spacing: 30px;
+        color: #fff;
+        text-shadow: -1px -1px rgba(0, 0, 0, 0.15);
+        white-space: nowrap;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+      }
+      .toggle:checked {
+        background: #4cd964;
+      }
+      .toggle:checked:before {
+        left: 70px;
+      }
+    </style>
+  </head>
+  <body id="bg">
+    <h2 id="status" style="color: white">Good Night :)</h2>
+    <input id="swbtn" class="toggle" type="checkbox" />
+
+    <script>
+      const warna = ["black", "white"];
+      swbtn.addEventListener("click", function () {
+        document.body.style.backgroundColor = warna[0];
+        swbtn.addEventListener("click", function () {
+          document.body.style.backgroundColor = warna[1];
+          const e = document.querySelector("input");
+          if ("click") {
+          } else e.parentElement.removeChild(e);
+        });
+      });
+    </script>
+  </body>
+</html>

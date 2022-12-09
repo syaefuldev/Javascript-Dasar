@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //When we create a variable, we assign it a value
+        //like a assigning 3 to wallet
+        const wallet = 3;
+        console.log(wallet);
+        /* 
+        Self-assignment is when we set a variable to its own value
+        for example, we can set wallet to its value 3 with wallet = wallet
+        */
+       let wallet1 = 3
+       wallet1 = wallet1
+       console.log(wallet)
+       /* 
+       Since we can self-assign variables. we can increase or decrase variables set to numbers
+       Try increasing wallet with wallet = wallet +1 
+       */
+      let wallet2 = 3
+      wallet2 = wallet2 + 1
+      console.log(wallet2)
+      /* 
+      Self-assigning variables let us track data that changes over time, For example
+      a user might add 10 dollars to wallet and then remove 3
+      */
+     let wallet3 = 3
+     wallet3 = wallet3 + 10
+     wallet3 = wallet3 - 3
+     console.log(wallet3)
+     /* 
+     Variables set to strings work the same way.
+     Try setting nameInfo to nameInfo+ "John"
+     */
+    let nameInfo = "Account Name :"
+    nameInfo = nameInfo + " Syaeful"
+    nameInfo = nameInfo + "Annas"
+    console.log(nameInfo)
+    // Give number a value so that 5 display in the console
+    let number = 5
+    let likes = number
+    console.log(likes)
+    //Add five to the value of the inventory variable
+    let inventory = 11
+    inventory = inventory + 5
+    console.log(inventory)
+    //Subtract one from the cards variables value,then add four
+    let cards = 3
+    cards = cards - 1
+    cards = cards + 4
+    console.log(cards)
+    //Display Syaeful Annas in the console by coding artistName
+    let artistName = "Syaeful"
+    artistName = artistName + " Annas"
+    console.log(artistName)
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* 
+        -Function tidak hanya bisa digunakan sebagai
+        kode program yang dieksekusi, tapi juga bisa
+        sebagai value
+        -Artinya, function bisa disimpan divariable,
+        bisa juga dikirim melalu parameter ke function
+        lainnya
+        */
+      //Kode Function di Variable
+      function sayHello(name) {
+        console.info(`Hello ${name}`);
+      }
+      let say = sayHello;
+      sayHello("Syaeful");
+      say("Annas");
+      //Kode Function di Parameter
+      function giveMeName(callback) {
+        callback("Syaeful");
+      }
+      giveMeName(sayHello);
+      giveMeName(say);
+    </script>
+  </body>
+</html>

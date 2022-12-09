@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+      Recursive function adalah kemampuan function memanggil
+      functionnya sendiri.Kadang memang ada banyak problem
+      yang lebih mudah diselesaikan menggunakan Recursive
+      function,seperti kasus factorial
+      */
+      //Kode factorial loop
+      function factorial(value) {
+        let result = 1;
+        for (let i = 1; i <= value; i++) {
+          result *= i;
+        }
+        return result;
+      }
+      console.info(factorial(5));
+      //Kode Factorial Recursive
+      function factorialRecursive(value) {
+        if (value === 1) {
+          return 1;
+        } else {
+          return value * factorialRecursive(value - 1);
+        }
+      }
+      console.info(factorialRecursive(5))
+      //5 * factorial (4)
+      //5 * 4 *factorial (3)
+      //5 * 4 * 3 * factorial (2)
+      //5 * 4 * 3 * 2 factorial (1)
+      //5 * 4 * 3* 2 * 1
+    </script>
+  </body>
+</html>

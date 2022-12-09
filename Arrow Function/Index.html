@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* 
+        Arrow Function adalah alternatif pembuatan function
+        yang lebih sederhana dari function biasanya.
+        Namun terdapat limitasi dan juga tidak bisa digunakan
+        disemua situasi
+        Dinamakan arrow function karena menggunakan tanda
+        => (seperti panah)
+        Berikut contoh beberapa kekurangan Arrow Func:
+        -Tidak memiliki fitur arguments object
+        -Tidak bisa mengggunakan function generator
+        -Tidak bisa mengakses this
+        -Tidak bisa mengakses super
+        */
+      //Kode Membuat Arrow Function
+      const sayHello = (name) => {
+        const say = `Hello ${name}`;
+        console.info(say);
+      };
+      sayHello("Syaeful");
+      /* 
+      ARROW FUNCTION TANPA BLOCK
+      Jika sebuah arrow function isinya sederhana,
+      misal hanya satu baris
+      Kita bisa membuat arrow function tanpa harus
+      menggunakan block
+      */
+      //Kode Arrow Func Tanpa Block
+      const sayHelo = (name) => console.info(`Hello ${name}`);
+      sayHelo("Syaeful");
+      /* 
+      ARROW FUNCTION RETURN VALUE
+      Arrow function bisa mengembalikan value,sama 
+      seperti function biasanya.Jika menggunakan block
+      ,maka tidak perlu menggunakan kata kunci return.
+      Jika tidak menggunakan block,kita tidak perlu mengggunakan
+      kata kunci return
+      */
+      //Kode Arrow Function Return Value
+      const sum = (first, second) => first + second;
+      console.info(sum(10, 10));
+      /*
+      ARROW FUNCTION TANPA KURUNG PARAMETER
+      Jika parameter diarrow function hanya satu,
+      kita tidak bisa menggunakan kurung pda parameter
+      */
+      const sayHallo = (name) => console.info(`Hello ${name}`);
+      sayHallo("Syaeful");
+      /* 
+      KODE ARROW FUNCTION SEBAGAI PARAMETER
+      Karena arrow function sama seperti anonmyous func
+      jadi kita juga bisa menggunakan arrow function sbg
+      parameter di function lain
+      */
+      //Kode Arrow Function sebagai Parameter
+      function giveMeName(callback) {
+        callback("Syaeful");
+      }
+      giveMeName((name) => console.info(`Hello ${name}`));
+    </script>
+  </body>
+</html>

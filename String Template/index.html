@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        //STRING TEMPLATE
+        Kita sudah tahu bahwa untuk menambahkan string dengan data lain,
+        kita bisa menggunakan operator +(plus)
+        Namun pada kasus tertentu, penggunaan operator + (plus) sangat
+        menyulitkan, apalagi jika dalam jumlah banyak.
+        Javascript memiliki fitur yang bernama string template, diamana
+        kita bisa mensubtitusikan data dari luar string kedalam string,
+        seperti mengambil data variabel, atau bahkan melakukan operasi matematika.
+        Untuk menggunakan string template, cara pembuatan string nya harus menggunakan `(backtick)
+        bukan '(petik satu) atau "(petik dua)
+        */
+       //Kode String Template
+       const template = `Name : `
+
+       //Kode Mengambil Variable
+
+       const name = "Syaeful Annas"
+       const template1 = `Name : ${name}`
+
+       console.info(template1)
+       // Kode Expression di String Template
+       const nama = "Syaeful Annas"
+       const value = 80
+
+       const template2 = ` Nama : ${nama}, Lulus : ${value > 75}`
+       console.info(template2)
+
+       /* 
+       Multiline String
+       String template juga bisa digunakan untuk membuat string multiline
+       kita cukup tambahkan enter ditext nya
+       */
+      //Kode Multiline String
+      let multilineString = `
+      Nama saya adalah Syaeful Annaas
+      Hello Word
+      hehe
+      `
+      document.writeln("<pre>")
+        document.writeln(multilineString)
+        document.writeln("</pre>")
+    </script>
+</body>
+</html>

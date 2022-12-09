@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        To stop a loop, we start by creating
+        a variable outside of the loop
+        */
+       /*let keepGoing = true
+       while (true) {
+        console.log(true)
+       }*/
+       /* We use the variable in the condition to
+       decide whether or not the loop should run its
+       code block.For example (keepGoing === true)
+       */
+      /*let keepGoing = true
+      while (keepGoing == true) {
+        console.log('Nice try')
+      }*/
+      /* 
+      Inside the code block, we stop the loop by setting
+      keepGoing to false condition returns false
+      */
+     let keepGoing = true
+     while (keepGoing === true){
+        console.log("Nice Try")
+        keepGoing = false
+     }
+     /* 
+     The loop runs its entire code block because keepGoing
+     is true at first , but doesnt run again if we set
+     keepGoing to false
+     */
+    let keepGoing1 = true
+    while (keepGoing1 === true){
+        console.log("Keep Going :" + keepGoing1)
+        keepGoing1 = false
+        console.log("Keep Going :" + keepGoing1)
+    }
+    //In order to use the variable in the while loops
+    //condition, create it outside of the same block
+    let keepPlaying = true
+    while (keepPlaying === true) {
+        console.log("Now Playing :" + true)
+        keepPlaying= false
+    }
+    //Skip the loop by using the autoPillotOn variable
+    //inside the condition
+    let autoPillotOn = false
+    while (autoPillotOn === true) {
+        console.log ("Auto Pillot On : Vroom!")
+        autoPillotOn = false
+    }
+    //Inside the code block, stop the loop after running
+    //its code block by setting isOn to false
+    let isOn = true
+    while (isOn === true){
+        console.log("Now Playing : Yummi")
+        isOn = false
+    }
+    </script>
+</body>
+</html>

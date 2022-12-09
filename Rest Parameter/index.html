@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* 
+        Rest parameter adalah fitur dimana kita bisa mengirim
+        data sebanyak banyaknya pada satu parameter dan
+        secara otomatis aka dikonversi menjadi array
+        -Untuk membuat rest parameter ada ketentuannya
+        -Rest parameter hanya boleh ada satu function,
+        tidak boleh lebih dari satu
+        -rest parameter hanya boleh berada diposisi paling akhir
+        ,tidak boleh didepan atau ditengah, kecuali
+        memang cuma ada 1 parameter
+        -Dibahasa pemrograman lain, ada juga yang bilang
+        ini adalah variable argument
+        */
+      function sum(name, ...data) {
+        let total = 0;
+        for (const item of data) {
+          total += item;
+        }
+        document.writeln(`<p>total ${name} is ${total}</p>`);
+      }
+      sum("orance", 2, 3, 4, 5, 6, 7);
+      sum("apple", 5, 5, 6, 7, 5, 6);
+      sum("banana", 9, 5, 2, 3, 4);
+      //Spread Syntax
+      /* 
+      Kadang kita terlanjur memiliki data berupa array
+      tapi untungnya kita juga bisa mengirim aray ke
+      rest parameter.Kita bisa gunakan...(titik tiga kali)
+      di ikuti dengan array nya ketika memanggil function
+      */
+      const values = [10, 10, 10, 10, 10];
+      sum("test", ...values);
+      /* 
+     ARGUMENTS OBJECT
+     Sebelum ada fitur rest parameter, di javascript
+     sudah ada fitur yang bernama arguments object,
+     ini adalah fitur dimana kita bisa mengambil parameter
+     dalam bentuk array dengan menggunakan object bernama
+     arguments secara otomatis bisa digunakan di function
+     Namun perlu di ingat,bahwa untuk dijavascript saat ini,
+     lebih baik disarankan menggunakan rest parameter
+     dibanding arguments object
+     */
+    //Kode Arguments Object
+    function oldSum(){
+        let totall = 0
+        for (const items of arguments){
+            totall += items
+        }
+        document.writeln(`<p>Total is ${totall}</p>`)
+    }
+    oldSum(1,2,3,4,5,6,7,8,9,10)
+    </script>
+  </body>
+</html>

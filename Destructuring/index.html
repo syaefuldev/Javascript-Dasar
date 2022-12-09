@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    /* Destructuring adalah fitur yang bisa digunakan untuk membongkar value-value di array atau object ke dalam variable */
+    <script>
+      //Kode Destructuring Array
+      const names = ["Syaeful", "Annas", "Sheyana", "Sabila"];
+      const [firstNamee, middleName, lastNamee, ...others] = names;
+      console.info(firstNamee);
+      console.info(middleName);
+      console.info(lastNamee);
+      console.info(others);
+      //Kode mengambil data di object
+      const person = {
+        firstName: "Syaeful",
+        lastName: "Annas",
+        addres: {
+          street: "Cirebon",
+          city: "Cirebom",
+          country: "Indonesia",
+        },
+        hobby: "Game",
+        Channel: "JESH",
+      };
+
+      //Kode Destructuring Object
+      //const { firstName, lastName, addres, ...other } = person;
+      //console.info(firstName);
+      //console.info(lastName);
+      //console.info(addres);
+      //console.info(other);
+
+      //Kode Destructuring Nested Object
+      let {
+        firstName,
+        lastName,
+        addres: { street, city, country },
+        ...other
+      } = person;
+
+      console.info(country);
+      console.info(city);
+      console.info(street);
+      console.info(other);
+      //Destructuring function parameter
+      /* 
+      Desct tidak hanya bisa dilakukan divariable,
+      tapi juga bisa dilakukan di function parameter
+      */
+      //Kode Dectruc di Func Parameter(1)
+      function displayPerson({ firsttName, middleName, Lasttname }) {
+        console.info(firsttName);
+        console.info(middleName);
+        console.info(lasttName);
+      }
+      const personn = {
+        firsttName: "syaeful",
+        middleName: "Annas",
+        lasttName: "Shea",
+      };
+      displayPerson(personn);
+    </script>
+  </body>
+</html>

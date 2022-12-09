@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Konversi String dan Number
+        Saat membuat aplikasi, kadang kita input dari pengguna dalam bentuk string
+        sedangkan kita ingin mengelola datanya dalam bentuk number
+        maka sangat disarankan untuk melakukan konversi tipe data
+        
+        */
+       //Kode Masalah Tanpa Konversi
+       const value1 = "1"
+       const value2 = 1
+       const sum = value1 + value2
+
+       document.writeln(`<p> ${sum}</p>`)
+
+       /* 
+       Melakukan Konversi String dan Number
+
+       parseInt(String) = Mengkonversi dari string ke number(Bilangan bulat)
+       parseFloat(String) = Mengkonversi dari string ke number ( Bilangan Pecahan )
+       Number(String)    = Mengkonversi dari string ke Number (Bilangan Bulat atau Pecahan)
+       number to string() = Mengkonversi dari number ke string
+       */
+      //Kode Konversi String ke Number
+      document.writeln(` ${parseInt("1.1")}</p>`)
+      document.writeln(` ${parseFloat("1.1")}</p>`)
+      document.writeln(` ${Number("1.1")}</p>`)
+
+      const a = 1
+      const b = 1
+      const total = a. toString() + b. toString()
+      document.writeln(`<p> ${total}</p>`)
+
+      /* NaN
+      Bagaimana jika ternyata data string yang kita coba konversi
+      ke numbeer bukanlah data yang valid ?
+      Jika data string yang kita coba lakukan konversi bukanlah data valid,
+      maka hasil dari konversi tersebut adalah NaN (Not a Number)
+      NaN adalah number spesial yang menyebutkan bahwa ini bukanlah
+      number
+      Jika NaN di Operasikan dengan data number lainnya,maka hasilnya akan menjadi
+      NaN lagi 
+      */
+     //Kode : Nan
+     document.writeln(`<p> ${parseInt("salah")}</p>`)
+     document.writeln(`<p> ${parseFloat("1.1text")}</p>`)
+    
+    //Number () tidak akan mentolelir kesalahan pada data
+    document.writeln(`<p> ${Number("1.1ups")}</p>`)
+    document.writeln(`<p> ${Number("1x")}</p>`)
+    document.writeln(`<p> ${Number("bukan number")}</p>`)
+    
+    // Kode Operasi Pada NaN
+    const value3 = Number("salah")
+    const value4 = 100
+    const summ = value3 + value4
+    document.writeln(`<p>${summ}</p>`)
+
+    /* 
+    isNaN () Function
+    Kadang kita ingin mengecek apakah sebuah number itu NaN atau bukan.
+    Untuk melakukan pengecekan tersebut, kita bisa menggunakan function isNan(Number)
+    Hasilnya adalah berupa data boolean, true jika Nan , false jika bukan.
+
+    */
+   //Kode isNaN
+   const value5 = Number("salah")
+    const value46 = 100
+    const suymm = value3 + value4
+    document.writeln(`<p>${isNaN(suummm)}</p>`)
+    </script>
+</body>
+</html>

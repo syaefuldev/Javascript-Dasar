@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Variable adalah tempat untuk menyiman data. Dengan
+        menyimpan data divariable, kita bisa menggunakannya
+        lagi dengan menyebutkan nama variablenya. Untuk
+        membuat variable di Javascript, kita bisa menggunakan
+        kata kunci var diikuti dengan nama variablenya.
+        Javascript adalah dynamic language, artinya variable
+        di Javascript tidak terpaku harus menggunakan satu tipe
+        data, kita bisa mengubah-ubah tipe data di variable
+        yang sama
+        */
+        //no variable
+        document.writeln("Syaeful Annas")
+        document.writeln("</br>")
+        document.writeln("Syaeful Annas")
+        document.writeln("</br>")
+        document.writeln("Syaeful Annas")
+        document.writeln("</br>")
+        document.writeln("Syaeful Annas")
+        document.writeln("</br>")
+        document.writeln("Syaeful Annas")
+        //bervariable
+        var fullName;
+        var firstName;
+        var middleName;
+        var lastName;
+        fullName= "Sheyana Bagoes Sabila"
+       firstName= "Sheyana"
+       middleName= "Bagoes"
+       lastName= " Sabila"
+        /* 
+        Mengubah Value di Variable
+        Setelah variable di deklarasikan, kita bisa mengubah
+        value atau nilai di dalam variable tersebut.
+        Untuk mengubahnya, kita bisa menggunakan perintah nama variable
+        diikuti dengan tanda = (sama dengan) lalu diikuti dengan
+        value atau nilainya
+        */
+       fullName= "Sheyana Bagoes Sabila"
+       firstName= "Sheyana"
+       middleName= "Bagoes"
+       lastName= " Sabila"
+       /*
+       Membuat Variable Langsung Dengan Variable
+       Di Javascript juga kita bisa mendeklerasikan sebuah
+       variable, langsung dengan isi valuenya
+       Caranya kita bisa menggunakan kata kunci var diikuti
+       nama variable, lalu dikuti dengan tanda = (sama dengan)
+       dan diikuti dengan value atau nilainya
+       */
+      //Kode Variable dan Value
+      var namaLengkap = "Syaeful" +""+ "Annas"
+      var namaDepan = "Syaeful"
+      var namaBelakang = "Annas"
+
+      //Mengakses Variable
+      /* 
+      Salah satu ke untungan menggunakan variable adalah
+      bisa digunakan kembali. Hal ini akan mempermudah data
+      yang sama berkali kali. Untuk mengakses variable, kita 
+      cukup menyebutkan nama variablenya.
+      */
+     //Kode Mengakses Variable
+     var firstName = "Syaeful Annas"
+     document.writeln(firstName);
+     document.writeln("</br>")
+     document.writeln(firstName);
+     document.writeln("</br>")
+     document.writeln(firstName);
+     document.writeln("</br>")
+     /*
+     Kata Kunci Let dan Const
+     Sebelum tahun 2015, kata untuk membuat variable hanya
+     bisa menggunakan kata kunci var, namun tahun 2015 sejak
+     versi ECMAScript 2015, diperkenalkan kata kunci baru
+     untuk membuat variable, let dan cost.
+     Javascript sekarang tidak direkomendasikan lagi menggunakan
+     kata kunci var untuk membuat variable, namun diganti dengan
+     let, hal ini dikarenakan ada masalah dari desain awal
+     var.
+     */
+    //Kode Variable let
+    let firstName = "Syaeful Annas"
+    document.writeln(firstName);
+     document.writeln("</br>")
+     document.writeln(firstName);
+     document.writeln("</br>")
+     document.writeln(firstName);
+     document.writeln("</br>")
+
+     /* 
+     Kata Kunci Const
+     Kata kunci let itu seperti kata kunci var, dimana data
+     divariable tersebut bisa diubah-ubah sesuka kita. Sedangkan
+     kata kunci const berbeda, ketika sebuah variable sudah diisi
+     divariable const, maka variable tersebut tidak bisa diubah lagi
+     valuenya. Variable sejenis ini kadang dibilang juga constant
+     */
+    //Kode Variable Const
+    const application = "Belajar javascript dasar"
+    application = "Gak mau belajar" //error
+    </script>
+
+
+</body>
+</html>

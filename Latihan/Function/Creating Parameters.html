@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        For a start , we can use constants inside func
+        tion. Like creating const name = "Ron"; and
+        using it in the display statement
+        */
+       function greetRon(){
+        const name = "Shea"
+        console.log("Hallo " + name)
+       }
+       greetRon()
+       /* 
+       Instead of writing two functions, we can pass
+       specific information to just one function,
+       without repeating code.Here's a peek
+       */
+      function greet(name){
+        console.log("Hello " + name)
+      }
+      greet("Shea")
+      greet("Sabila")
+      //Complete the display statement
+      function userStatus(){
+        const active = "Active"
+        const inactive = "Inactive"
+        console.log("Bob: " + inactive)
+      }
+      userStatus()
+      //Add the status parameter to the function
+      function userStatus(status){
+        console.log("Bob : " + status)
+      }
+      userStatus("Active")
+      //Add the function name displayHalf and the 
+      //parameter number
+      function displayHalf(number){
+        const half = number / 2
+        console.log(half)
+      }
+      displayHalf(10)
+    </script>
+</body>
+</html>

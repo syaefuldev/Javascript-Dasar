@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+       Pada tipe data object, kita sudah membahas
+       tentang property di object,
+       Karena sebenarnya function juga merupakan
+       salah satu tipe data, jadi function pun
+       sebenarnya bisa ditambahkan sebagai property
+       di object
+       Cara pembuatannya pun sama dengan function
+       sebagai value
+       Function di object kadang disebut dengan sebagaiObject method
+       */
+      const person = {
+        name: "Syeful",
+        sayHello: function (name) {
+          alert(`Hello ${name}`);
+        },
+      };
+      person.sayHello("Syaeful");
+    </script>
+  </body>
+</html>
